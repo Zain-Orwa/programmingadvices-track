@@ -9,7 +9,6 @@
  - This code is for learning purposes.
  - It is not fully optimized.
  - Edge cases are not fully handled (e.g., invalid/negative inputs, non-Gregorian years).
- - This program is not intended to check or handle decimal (floating-point) numbers.
 */
 
 #include <iostream>
