@@ -10,8 +10,6 @@
  - This code is for learning purposes.
  - It is not fully optimized.
  - Edge cases are not fully handled (e.g., invalid dates).
- - Decimal (floating-point) numbers are not needed here because all values
-   (day, month, year, indexes) are whole numbers.
 */
 
 #include <iostream>
