@@ -68,9 +68,13 @@ void    PrintMonthCalendar(short Month, short Year){
 }
 
 void    PrintYearCalendar(short Year){
-    short Month = 1;
 
-    for (Month = 1; Month <= 12; Month++){
+    printf("\n____________________________________________\n");
+    printf("\n              Calendar - %d", Year);
+    printf("\n____________________________________________\n");
+
+
+    for (short Month = 1; Month <= 12; Month++){
 
         PrintMonthCalendar(Month, Year);
         cout << "\n\n";
