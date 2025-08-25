@@ -1,3 +1,25 @@
+/*
+ Problem 9
+ =========
+ Create a program that reads a year from the user
+ and prints a formatted calendar for the entire year.
+
+ Notes
+ =====
+ - The program calculates leap years to correctly adjust February days.
+ - A helper function determines the first weekday of each month using a
+   mathematical formula based on the Gregorian calendar.
+ - The calendar is printed in a text-based table format, showing all
+   months of the year one after another.
+ - This implementation is for learning purposes only:
+    * It is not fully optimized.
+    * Error handling for invalid input (e.g., negative years, invalid months)
+      is minimal.
+    * Formatting could differ across compilers/platforms.
+*/
+
+
+
 #include <iostream>
 #include <string>
 
