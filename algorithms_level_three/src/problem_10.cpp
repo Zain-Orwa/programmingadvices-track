@@ -1,3 +1,18 @@
+/*
+ Problem 10
+ ==========
+ Create a program that reads a day, month, and year from the user
+ and prints the number of days passed since the beginning of that year.
+
+ Notes
+ =====
+ - The program checks leap years to correctly handle February.
+ - A helper function calculates the number of days in each month.
+ - Another function sums up the days of previous months and adds the current day.
+ - Error handling is minimal and intended for learning purposes.
+*/
+
+
 #include <iostream>
 #include <string>
 
