@@ -1,3 +1,20 @@
+/*
+ Problem 11
+ ==========
+ Create a program that reads a day, month, and year, prints the number of
+ days since the beginning of that year, then converts that day-order back
+ to a calendar date and prints it.
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (Feb = 29 in leap years).
+ - A helper returns days in a month; another sums days from Jan 1 to the date.
+ - A conversion function maps an ordinal day (1..365/366) back to (day/month/year).
+ - Months are 1-based; validation is minimal and intended for learning.
+*/
+
+
+
 #include <iostream>
 #include <string>
 using namespace std;
