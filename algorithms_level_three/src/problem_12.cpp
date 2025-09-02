@@ -1,3 +1,19 @@
+/*
+ Problem 12
+ ==========
+ Create a program that reads a date (day, month, year) and a number of days to add,
+ then prints the resulting calendar date after adding those days.
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - `NumberOfDaysInMonth(m, y)` provides month lengths; February adjusts for leap years.
+ - `NumberOfDaysFromBeginningOfTheYear(d, m, y)` computes the ordinal day.
+ - `DateAddDays(days, date)` advances through months/years until the remaining days fit.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
 #include <iostream>
 using namespace std;
 
