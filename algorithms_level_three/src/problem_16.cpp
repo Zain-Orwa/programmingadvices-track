@@ -1,3 +1,20 @@
+/*
+ Problem 16
+ ==========
+ Create a program that reads a date (day, month, year) and prints the date
+ after adding exactly one day.
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - `NumberOfDaysInMonth(m, y)` provides month length for boundary checks.
+ - If it's the last day of a month (but not December), roll to day=1 of next month.
+ - If it's December 31, roll to January 1 of the next year.
+ - Otherwise, simply increment the day by 1.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
 #include <iostream>
 using namespace std;
 
