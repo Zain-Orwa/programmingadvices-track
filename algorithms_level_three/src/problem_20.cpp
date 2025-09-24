@@ -1,20 +1,32 @@
 /*
- Problem 20
- ==========
- Create a program that reads a date (day, month, year) and demonstrates how to 
- increase it by different time spans: days, weeks, months, years, decades, 
- centuries, and millennia.
-
- Notes
- =====
- - Leap years follow the Gregorian rule (February has 29 days in leap years).
- - Helper functions handle month lengths, clamping days, and rolling over months/years.
- - Each increment function builds on smaller ones (e.g., add days → add weeks → add months).
- - This code is intentionally written to teach how to combine functions; 
-   it is not optimized for efficiency.
-*/
-
-
+ * Problem 20 to 32
+ * ================
+ *  Write programs to read a date (day, month, year) and create functions that
+ *  demonstrate how to increase the date as follows:
+ *
+ *- IncreaseDateByXDays
+ *- IncreaseDateByOneWeek
+ *- IncreaseDateByXWeeks
+ *- IncreaseDateByOneMonth
+ *- IncreaseDateByXMonths
+ *- IncreaseDateByOneYear
+ *- IncreaseDateByXYears
+ *- IncreaseDateByXYearsFaster
+ *- IncreaseDateByOneDecade
+ *- IncreaseDateByXDecades
+ *- IncreaseDateByXDecadesFaster
+ *- IncreaseDateByOneCentury
+ *- IncreaseDateByOneMillennium
+ *
+ * Notes
+ * =====
+ *- Leap years follow the Gregorian rule (February has 29 days in leap years).
+ *- Helper functions handle month lengths, clamping days, and rolling over months/years.
+ *- Each increment function builds on smaller ones (e.g., add days → add weeks → add months).
+ *- Some functions have “faster” variants that use arithmetic instead of loops.
+ *- This section is intended to teach how to combine functions;
+ * it is not optimized for efficiency.
+ **/
 
 #include <iostream>
 using namespace std;
