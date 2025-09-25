@@ -1,3 +1,24 @@
+/*
+ * Problem 47 to 53
+ * ================
+ * Implement the following date utilities:
+ * - IsEndOfWeek
+ * - IsWeekend
+ * - IsBusinessDay
+ * - DaysUntilTheEndOfWeek
+ * - DaysUntilTheEndOfMonth
+ * - DaysUntilTheEndOfYear
+ *
+ * Notes
+ * =====
+ * - Day-of-week is computed via a Gregorian formula (0=Sun..6=Sat).
+ * - Leap years follow the Gregorian rule; February becomes 29 days in leap years.
+ * - Month lengths come from a helper (e.g., NumberOfDaysInMonth).
+ * - Some functions depend on earlier helpers (e.g., IncreaseDateByOneDay, date comparison).
+ * - Educational focus on composing small functions; not optimized.
+ **/
+
+
 #include <iostream>
 #include <ctime>
 using namespace std;
