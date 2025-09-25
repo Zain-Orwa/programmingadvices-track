@@ -1,18 +1,34 @@
 /*
  * Problem 33 to 46
  * ================
- * Create programs that read a date (day, month, year) and demonstrate how to
- * decrease it by different time spans: days, weeks, months, years, decades,
- * centuries, and millennia.
- *
- * Notes
- * =====
- *- Leap years follow the Gregorian rule (February has 29 days in leap years).
- *- Helper functions handle month lengths, clamping days, and rolling back months/years safely.
- *- Each decrement function composes simpler ones (day → week → month → year).
- *- Some functions in this section depend on the increase functions from previous problems.
- *- This code is intended to teach function composition; it is not optimized.
- **/
+/*
+ Problem 33 to 46
+ ================
+ Implement the following date utilities:
+
+ - DecreaseDateByOneDay
+ - DecreaseDateByXDays
+ - DecreaseDateByOneWeek
+ - DecreaseDateByXWeeks
+ - DecreaseDateByOneMonth
+ - DecreaseDateByXMonths
+ - DecreaseDateByOneYear
+ - DecreaseDateByXYears
+ - DecreaseDateByXYearsFaster
+ - DecreaseDateByOneDecade
+ - DecreaseDateByXDecades
+ - DecreaseDateByXDecadesFaster
+ - DecreaseDateByOneCentury
+ - DecreaseDateByOneMillennium
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - Helper functions handle month lengths, clamping days, and rolling back months/years.
+ - Each decrement function composes simpler ones (day → week → month → year).
+ - Some functions reuse logic from previous increase/decrease helpers.
+ - This section is intended for learning function composition; it is not optimized.
+*/
 
 
 #include <iostream>
