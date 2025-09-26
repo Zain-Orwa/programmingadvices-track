@@ -1,3 +1,21 @@
+/*
+ Problem 54
+ ==========
+ Create a program that reads a vacation start and end date, then prints the
+ number of actual vacation days (business days only, excluding weekends).
+
+ Notes
+ =====
+ - Day-of-week is computed via a Gregorian formula (0=Sun..6=Sat).
+ - Leap years follow the Gregorian rule; February becomes 29 days in leap years.
+ - A helper advances the date one day at a time and counts only Mon–Fri.
+ - Counting is start-inclusive and end-exclusive, matching the loop condition.
+ - Some helpers depend on earlier functions (e.g., NumberOfDaysInMonth).
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
+
 #include <iostream>
 using namespace std;
 
