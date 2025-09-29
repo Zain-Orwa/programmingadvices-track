@@ -54,7 +54,7 @@ sDate ReadFullDate(){
     return (Date);
 }
 
-bool isDate1BeforeDate2(sDate Date1, sDate Date2){
+bool isDate1EqualDate2(sDate Date1, sDate Date2){
     return (Date1.Year == Date2.Year) ? ((Date1.Month == Date2.Month) ? ((Date1.Day == Date2.Day) ? true : false) : false) : false;
 }
 
@@ -62,7 +62,7 @@ int main(){
     sDate Date1 = ReadFullDate();
     sDate Date2 = ReadFullDate();
 
-    if (isDate1BeforeDate2(Date1, Date2))
+    if (isDate1EqualDate2(Date1, Date2))
         cout << "\nYes, Date1 is equal to Date2!" << endl;
     else
         cout << "\nNo, Date1 is not equal to Date2!" << endl;
