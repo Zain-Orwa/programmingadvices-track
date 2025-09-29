@@ -1,5 +1,20 @@
+/*
+ Problem 55
+ ==========
+ Create a program that reads two dates and checks whether the first date
+ comes after the second date.
+
+ Notes
+ =====
+ - Equality is checked by comparing year → month → day.
+ - "After" is defined as not before and not equal.
+ - Comparison helpers: isDate1EqualDate2, isDate1BeforeDate2, isDate1AfterDate2.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
+
 #include <iostream>
-#include <string>
 
 using namespace std;
 
