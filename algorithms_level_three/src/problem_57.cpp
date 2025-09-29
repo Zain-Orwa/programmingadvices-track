@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+enum enDateCompare {Before = -1, Equal = 0, After = 1};
 
 struct sDate {
     short Day;
@@ -48,21 +49,21 @@ bool isDate1BeforeDate2(sDate Date1, sDate Date2){
         (Date1.Year == Date2.Year && Date1.Month == Date2.Month && Date1.Day < Date2.Day);
 }
 
-bool isDate1AfterDate2(sDate Date1, sDate Date2){
-    return (!isDate1BeforeDate2(Date1, Date2) && !isDate1EqualDate2(Date1, Date2));
+enDateCompare CompareDates(sDate Date1, sDate Date2){
+    return (isDate1BeforeDate2(Date1, Date2)) ? enDateCompare::Before : isDate1EqualDate2(Date1, Date2) ?
+        enDateCompare::Equal : enDateCompare::After;
 }
-
 
 int main(){
     sDate Date1 = ReadFullDate();
     sDate Date2 = ReadFullDate();
-    
-    if (isDate1AfterDate2(Date1, Date2))
-        cout << "\nYes, Date1 is after Date2!\n";
-    else
-        cout << "\nNo, Date1 is not after Date2!" << endl;
 
+    enDateCompare Result = CompareDates(Date1, Date2);
+
+    cout << "\nCompare Result = " << Result << endl;
+    
     return (0);
 }
+
 
 
