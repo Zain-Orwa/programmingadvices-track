@@ -1,3 +1,19 @@
+/*
+ Problem 57
+ ==========
+ Create a program that reads two date periods (start date and end date for each)
+ and checks whether the two periods overlap.
+
+ Notes
+ =====
+ - Each period is represented by a struct with start and end dates.
+ - Comparison uses an enum (Before, Equal, After) to check date ordering.
+ - Two periods do not overlap if one ends before the other starts.
+ - Otherwise, they are considered overlapping.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -93,5 +109,4 @@ int main() {
 
 	return (0);
 }
-
 
