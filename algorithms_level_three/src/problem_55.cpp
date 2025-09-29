@@ -1,3 +1,22 @@
+/*
+ Problem 55
+ ==========
+ Create a program that reads a vacation start date and the number of vacation days,
+ then calculates and prints the return date, skipping weekends.
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - Day-of-week is computed using a Gregorian formula (0=Sun..6=Sat).
+ - The algorithm:
+      * If the start date is a weekend, advance to the next business day.
+      * Count vacation days, skipping Saturdays and Sundays.
+      * If the return date falls on a weekend, advance to the next Monday.
+ - Helpers: IncreaseDateByOneDay, isWeekend, DayOfTheWeekOrder.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
 #include <iostream>
 using namespace std;
 
