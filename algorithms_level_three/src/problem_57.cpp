@@ -1,3 +1,22 @@
+/*
+ Problem 56
+ ==========
+ Create a program that reads two dates and compares them, returning whether
+ the first date is before, equal to, or after the second date.
+
+ Notes
+ =====
+ - Comparison result is represented by an enum:
+      * -1 = Before
+      *  0 = Equal
+      *  1 = After
+ - Helper functions check for equality and "before" ordering.
+ - CompareDates uses these helpers to return the appropriate enum value.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
+
 #include <iostream>
 using namespace std;
 
