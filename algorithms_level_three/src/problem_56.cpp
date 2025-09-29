@@ -1,5 +1,5 @@
 /*
- Problem 55
+ Problem 56
  ==========
  Create a program that reads two dates and checks whether the first date
  comes after the second date.
