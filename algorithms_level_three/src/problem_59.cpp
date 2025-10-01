@@ -1,3 +1,19 @@
+/*
+ Problem 59
+ ==========
+ Create a program that reads a period (start date and end date) and prints the
+ length of the period in days, with an option to include the end day.
+
+ Notes
+ =====
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - Difference is computed by advancing the start date one day at a time until it reaches the end date.
+ - Start-exclusive by default; when IncludeEndDay=true, the count is inclusive.
+ - Helpers used: IncreaseDateByOneDay, isDate1BeforeDate2, NumberOfDaysInMonth.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
 #include <iostream>
 using namespace std;
 
