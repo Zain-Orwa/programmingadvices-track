@@ -91,7 +91,7 @@ bool isOverlapPeriod(stPeriod Period1, stPeriod Period2){
 		return true;
 }
 
-int main() {
+int main(void) {
     stPeriod Period1;
     cout << "\nEnter Period1: ";
     Period1 = ReadPeriod();
