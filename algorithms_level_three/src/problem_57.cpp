@@ -73,7 +73,7 @@ enDateCompare CompareDates(sDate Date1, sDate Date2){
         enDateCompare::Equal : enDateCompare::After;
 }
 
-int main(){
+int main(void){
     sDate Date1 = ReadFullDate();
     sDate Date2 = ReadFullDate();
 
