@@ -70,7 +70,7 @@ bool isDate1AfterDate2(sDate Date1, sDate Date2){
 }
 
 
-int main(){
+int main(void){
     sDate Date1 = ReadFullDate();
     sDate Date2 = ReadFullDate();
     
