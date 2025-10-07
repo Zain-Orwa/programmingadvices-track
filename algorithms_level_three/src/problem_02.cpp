@@ -1,19 +1,25 @@
 /*
- Question
- ========
- Write a program that reads a year from the user and checks whether it is
- a leap year or not.
+ Problem 02
+ ==========
+ Create a program that reads a year from the user and determines whether
+it is a leap year according to the Gregorian calendar rules.
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - The leap year function here is intentionally written in a longer form 
-   for clarity and step-by-step learning. In the next problem, the function 
-   will be shortened to a more optimized version.
- - Edge cases are not fully handled (e.g., negative years, year zero, or extremely large values).
- - This program is not intended to check or handle decimal (floating-point) numbers.
+ Notes
+ =====
+ - A leap year is:
+     * Divisible by 400 → leap year.
+     * Divisible by 100 but not by 400 → not a leap year.
+     * Divisible by 4 but not by 100 → leap year.
+ - Otherwise, it is a common (non-leap) year.
+ - Demonstrates:
+     * Conditional branching (if-else logic).
+     * Modular arithmetic (% operator) for divisibility checks.
+ - Function Design:
+     * `ReadYear()` handles user input.
+     * `is_leap_year()` encapsulates leap-year logic cleanly.
+ - Builds early foundations for later date-related problems.
 */
+
 
 #include <iostream>
 using namespace std;
