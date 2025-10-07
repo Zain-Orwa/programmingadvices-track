@@ -1,3 +1,19 @@
+/*
+ Problem 60
+ ==========
+ Create a program that reads a date period (start and end) and a single date,
+ then prints whether the date falls within the period (inclusive).
+
+ Notes
+ =====
+ - Bounds are inclusive: StartDate ≤ Date ≤ EndDate.
+ - Uses comparison helpers with an enum (Before, Equal, After) to test ordering.
+ - Alternate implementation provided using direct comparisons (<= and >=) via helpers.
+ - Minimal input validation; intended for learning purposes.
+*/
+
+
+
 #include <iostream>
 using namespace std;
 
