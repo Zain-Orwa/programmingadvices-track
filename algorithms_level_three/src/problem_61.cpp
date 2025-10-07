@@ -1,3 +1,23 @@
+/*
+ Problem 61
+ ==========
+ Create a program that reads two date periods and calculates how many days overlap between them.
+
+ Notes
+ =====
+ - Each period is defined by a StartDate and EndDate.
+ - Leap years follow the Gregorian rule (February has 29 days in leap years).
+ - The program:
+     * Checks if the two periods overlap using CompareDate().
+     * If they overlap, counts how many days fall within both periods.
+     * Handles inclusive bounds when counting days.
+ - Helper functions used:
+     * isDateInPeriod(), isOverLapPeriod(), PeriodLengthInDays(), IncreaseDateByOneDay().
+ - Demonstrates combined use of multiple previously built date utilities.
+ - Intended for educational purposes, not optimized for performance.
+*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -176,14 +196,4 @@ int main(){
 
     return (0);
 }
-
-
-
-
-
-
-
-
-
-
 
