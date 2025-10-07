@@ -1,17 +1,21 @@
 /*
- Question
- ========
- Create a program that reads an integer and prints its English words
- representation (supports negative numbers and values up to trillions).
+ Problem 01
+ ==========
+ Create a program that reads a number from the user and converts it
+into its full English text representation (e.g., 12345 → "Twelve Thousand Three Hundred Forty Five").
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - Edge cases are not fully handled (e.g., hyphenation like "twenty-one",
-   regional grammar such as inserting "and", and extremely large limits).
- - This program is not intended to check or convert decimal (floating-point) numbers.
+ Notes
+ =====
+ - Handles numbers from negative trillions up to positive trillions.
+ - Uses recursion to decompose the number into smaller chunks (hundreds, thousands, millions, billions).
+ - Handles special cases like:
+     * Zero → "Zero"
+     * Negative numbers → prefixed with "Minus"
+ - Demonstrates string concatenation and modular arithmetic for digit isolation.
+ - Teaches recursive design thinking and function breakdown.
+ - This problem serves as a foundation for understanding number manipulation in C++.
 */
+
 
 #include <iostream>
 #include <string>
