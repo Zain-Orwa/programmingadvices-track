@@ -12,7 +12,7 @@ if/else structure.
      * Divisible by 100 (but not by 400) → not a leap year.
      * Divisible by 4 (but not by 100) → leap year.
      * Otherwise → not a leap year.
- - Functions:
+ - Functions:->
      * `ReadYear()` – reads input from the user.
      * `IsLeapYear()` – implements the conditional logic explicitly.
  - Demonstrates structured control flow and logical ordering of conditions.
