@@ -1,21 +1,28 @@
 /*
  Problem 10
  ==========
- Create a program that reads a day, month, and year from the user
- and prints the number of days passed since the beginning of that year.
+ Create a program that calculates how many days have passed since the beginning
+ of a given year up to a specified date (day, month, year).
 
  Notes
  =====
- - The program checks leap years to correctly handle February.
- - A helper function calculates the number of days in each month.
- - Another function sums up the days of previous months and adds the current day.
- - Error handling is minimal and intended for learning purposes.
+ - The program reads a complete date:
+      * Day (1–31)
+      * Month (1–12)
+      * Year (e.g., 2025)
+ - It sums up the total days from January 1st to the entered date.
+ - Helper functions:
+      * `isLeapYear()` – checks if the year is a leap year using the Gregorian rule.
+      * `NumberOfDaysInMonth()` – returns the correct number of days for each month.
+      * `NumberOfDaysFromBeginningOfTheYear()` – loops through months before the given one
+        and adds all their days plus the current day.
+ - February automatically adjusts to 29 days in leap years.
+ - Demonstrates cumulative counting, loop logic, and modular function design.
+ - Builds on previous problems by introducing date summation logic.
 */
 
 
 #include <iostream>
-#include <string>
-
 using namespace std;
 
 short  ReadYear(){
