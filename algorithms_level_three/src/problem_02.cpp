@@ -1,23 +1,22 @@
 /*
  Problem 02
  ==========
- Create a program that reads a year from the user and determines whether
-it is a leap year according to the Gregorian calendar rules.
+ Create a program that reads a year from the user and checks whether it is
+a leap year based on the Gregorian calendar rules using a clear step-by-step
+if/else structure.
 
  Notes
  =====
  - A leap year is:
-     * Divisible by 400 → leap year.
-     * Divisible by 100 but not by 400 → not a leap year.
-     * Divisible by 4 but not by 100 → leap year.
- - Otherwise, it is a common (non-leap) year.
- - Demonstrates:
-     * Conditional branching (if-else logic).
-     * Modular arithmetic (% operator) for divisibility checks.
- - Function Design:
-     * `ReadYear()` handles user input.
-     * `is_leap_year()` encapsulates leap-year logic cleanly.
- - Builds early foundations for later date-related problems.
+     * Divisible by 400  → leap year.
+     * Divisible by 100 (but not by 400) → not a leap year.
+     * Divisible by 4 (but not by 100) → leap year.
+     * Otherwise → not a leap year.
+ - Functions:
+     * `ReadYear()` – reads input from the user.
+     * `IsLeapYear()` – implements the conditional logic explicitly.
+ - Demonstrates structured control flow and logical ordering of conditions.
+ - This version focuses on clarity and step-by-step reasoning.
 */
 
 
