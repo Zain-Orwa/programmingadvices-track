@@ -17,7 +17,7 @@ boolean expression instead of nested if/else statements.
      * Boolean operator precedence.
      * Compact condition design.
      * Cleaner, production-style code.
- - Serves as an optimized continuation of Problem 02.
+ - Serves as an optimized continuation of the previous Problem 02.
 */
 
 
