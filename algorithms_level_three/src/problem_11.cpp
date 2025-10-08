@@ -1,22 +1,29 @@
 /*
  Problem 11
  ==========
- Create a program that reads a day, month, and year, prints the number of
- days since the beginning of that year, then converts that day-order back
- to a calendar date and prints it.
+ Create a program that:
+ 1. Calculates the day order (number of days since January 1st) for a given date.
+ 2. Converts that day order back into an exact calendar date (day, month, year).
 
  Notes
  =====
- - Leap years follow the Gregorian rule (Feb = 29 in leap years).
- - A helper returns days in a month; another sums days from Jan 1 to the date.
- - A conversion function maps an ordinal day (1..365/366) back to (day/month/year).
- - Months are 1-based; validation is minimal and intended for learning.
+ - The program reads a full date: day, month, and year.
+ - It first computes the total days from the start of the year using:
+      * `NumberOfDaysFromBeginningOfTheYear()`
+ - Then it reverses the calculation with:
+      * `GetDateFromDayOrderInYear()` — iteratively subtracts days per month
+        until the remaining value matches the target day.
+ - Helper functions:
+      * `isLeapYear()` – handles leap-year logic (February 29).
+      * `NumberOfDaysInMonth()` – returns the correct days for each month.
+ - Demonstrates two-way mapping between:
+      * (Day + Month + Year) → DayOrder
+      * DayOrder + Year → (Day + Month + Year)
+ - Useful for scheduling, calendars, and date-based algorithms.
+ - Builds directly on Problem 10 by adding the reverse-conversion capability.
 */
 
-
-
 #include <iostream>
-#include <string>
 using namespace std;
 
 short ReadDay(){
