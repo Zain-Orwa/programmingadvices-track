@@ -1,18 +1,27 @@
 /*
- Question
- ========
- Create a program that reads a year and a month from the user
- and prints a formatted calendar for that month.
+ Problem 08
+ ==========
+ Create a program that prints a monthly calendar for a given month and year,
+ correctly aligned with the day names using the Gregorian calendar rules.
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - Edge cases are not fully handled (e.g., invalid dates, negative years).
+ Notes
+ =====
+ - The program prompts the user for:
+      * A year (e.g., 2025)
+      * A month (1–12)
+ - Uses helper functions to modularize logic:
+      * `isLeapYear()` – determines leap years using the Gregorian rule.
+      * `NumberOfDaysInMonth()` – returns the total days in a month.
+      * `DayOfTheWeekOrder()` – finds the weekday index (0=Sun, …, 6=Sat).
+      * `MonthShortName()` and `DayShortName()` – return string abbreviations.
+      * `PrintMonthCalendar()` – prints the calendar grid with proper spacing.
+ - February adjusts automatically for leap years.
+ - Demonstrates combined arithmetic, date calculation, and formatted console output.
+ - Builds upon Problem 07 by extending weekday logic into a formatted month layout.
 */
 
+
 #include <iostream>
-#include <iomanip>
 #include <string>
 
 using namespace std;
