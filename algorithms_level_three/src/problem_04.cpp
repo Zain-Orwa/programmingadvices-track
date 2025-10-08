@@ -1,16 +1,21 @@
 /*
- Question
- ========
- Write a program that reads a year from the user and prints the total
- number of days, hours, minutes, and seconds in that year.
+ Problem 04
+ ==========
+ Create a program that reads a year and prints all months of that year, showing
+ how many days each month has — accounting for leap years.
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - Edge cases are not fully handled (e.g., negative years, year zero, or extremely large values).
- - This program is not intended to check or handle decimal (floating-point) numbers.
+ Notes
+ =====
+ - The program reads a single year from the user.
+ - It uses the Gregorian leap year rule:
+      * A year is a leap year if divisible by 400.
+      * Or if divisible by 4 but not by 100.
+ - February has 29 days in a leap year, otherwise 28.
+ - Uses a helper function `NumberOfDaysInMonth()` to determine each month’s days.
+ - Demonstrates conditional logic, arrays, and function modularization in C++.
+ - Builds on earlier problems (Problem 02 & 03) where leap year detection was introduced.
 */
+
 
 #include <iostream>
 using namespace std;
