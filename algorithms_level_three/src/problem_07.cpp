@@ -1,15 +1,24 @@
 /*
- Question
- ========
- Create a program that reads a date (day, month, year) and prints:
- - the day-of-week index for that date (0 = Sun, 1 = Mon, ... 6 = Sat)
- - the short name of the day (Sun/Mon/Tue/...).
+ Problem 07
+ ==========
+ Create a program that reads a full date (day, month, year) and determines which
+ day of the week it corresponds to — using the Gregorian calendar formula.
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - Edge cases are not fully handled (e.g., invalid dates).
+ Notes
+ =====
+ - The program prompts the user for a specific date:
+      * Day (1–31)
+      * Month (1–12)
+      * Year (e.g., 2025)
+ - Implements the **Gregorian Day-of-Week algorithm**:
+      * Formula: (Day + y + y/4 − y/100 + y/400 + (31*m)/12) % 7
+      * Returns a value 0–6 representing:
+          0 → Sunday, 1 → Monday, 2 → Tuesday, 3 → Wednesday,
+          4 → Thursday, 5 → Friday, 6 → Saturday
+ - The helper function `DayShortName()` converts this numeric result to a
+   human-readable day abbreviation (e.g., "Mon", "Tue").
+ - Demonstrates modularization, integer arithmetic, and calendar computation.
+ - Builds upon previous date-based problems by introducing weekday logic.
 */
 
 #include <iostream>
