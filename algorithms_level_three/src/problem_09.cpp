@@ -1,23 +1,26 @@
 /*
- Problem 9
- =========
- Create a program that reads a year from the user
- and prints a formatted calendar for the entire year.
+ Problem 09
+ ==========
+ Create a program that prints a full yearly calendar for a given year, showing
+ each month in order with correctly aligned weekdays according to the Gregorian calendar.
 
  Notes
  =====
- - The program calculates leap years to correctly adjust February days.
- - A helper function determines the first weekday of each month using a
-   mathematical formula based on the Gregorian calendar.
- - The calendar is printed in a text-based table format, showing all
-   months of the year one after another.
- - This implementation is for learning purposes only:
-    * It is not fully optimized.
-    * Error handling for invalid input (e.g., negative years, invalid months)
-      is minimal.
-    * Formatting could differ across compilers/platforms.
+ - The program prompts the user for a specific year (e.g., 2025).
+ - It then prints all 12 months, each with:
+      * A proper title header (month name + year).
+      * Correct weekday alignment (Sunday–Saturday).
+      * Leap-year adjustment for February.
+ - Helper functions:
+      * `isLeapYear()` – checks leap years (Gregorian rule).
+      * `NumberOfDaysInMonth()` – retrieves the number of days per month.
+      * `DayOfTheWeekOrder()` – computes the weekday index for the 1st of each month.
+      * `MonthShortName()` and `DayShortName()` – return readable abbreviations.
+      * `PrintMonthCalendar()` – prints a formatted monthly grid.
+      * `PrintYearCalendar()` – loops through all months to print the full year.
+ - Demonstrates modularization, nested loops, and real-world application of date logic.
+ - Builds upon Problem 08 (monthly calendar) and scales it to an annual view.
 */
-
 
 
 #include <iostream>
