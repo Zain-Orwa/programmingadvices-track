@@ -2,15 +2,15 @@
  Problem 12
  ==========
  Create a program that reads a date (day, month, year) and a number of days to add,
- then prints the resulting calendar date after adding those days.
+ then prints the resulting calendar date.
 
  Notes
  =====
  - Leap years follow the Gregorian rule (February has 29 days in leap years).
- - `NumberOfDaysInMonth(m, y)` provides month lengths; February adjusts for leap years.
- - `NumberOfDaysFromBeginningOfTheYear(d, m, y)` computes the ordinal day.
- - `DateAddDays(days, date)` advances through months/years until the remaining days fit.
- - Minimal input validation; intended for learning purposes.
+ - `NumberOfDaysInMonth(m, y)` returns month length; February adjusts for leap years.
+ - `NumberOfDaysFromBeginningOfTheYear(d, m, y)` converts a date to its day-order.
+ - `DateAddDays(n, date)` adds n days by advancing through months/years as needed.
+ - Minimal input validation; intended for learning and function composition.
 */
 
 
