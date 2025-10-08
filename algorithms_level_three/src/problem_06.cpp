@@ -1,15 +1,25 @@
 /*
- Question
- ========
- Create a program that reads a year and a month from the user and prints
- the total number of days, hours, minutes, and seconds in that month.
+ Problem 06
+ ==========
+ Create a program that reads a year and a month number, then calculates how many
+ days, hours, minutes, and seconds exist in that month — accurately handling leap years.
 
- Note
- ====
- - This code is for learning purposes.
- - It is not fully optimized.
- - Edge cases are not fully handled (e.g., invalid/negative inputs).
+ Notes
+ =====
+ - The program prompts the user for:
+      * A year (used for leap year calculation).
+      * A month (1–12).
+ - February has 29 days in leap years, otherwise 28.
+ - Helper functions:
+      * `is_leap_year()` – determines if the year follows the Gregorian leap rule.
+      * `NumberOfDaysInAMonth()` – returns days per month.
+      * `NumberOfHoursInAMonth()` – converts days to hours.
+      * `NumberOfMinutesInAMonth()` – converts hours to minutes.
+      * `NumberOfSecondsInAMonth()` – converts minutes to seconds.
+ - Demonstrates hierarchical function composition and arithmetic precision with `long long`.
+ - Builds upon Problems 04 and 05, extending date logic to time units.
 */
+
 
 #include <iostream>
 using namespace std;
